@@ -1,0 +1,16 @@
+---
+title: "Testing Book"
+output: html_notebook
+---
+
+
+```{r}
+library(coinmarketcapr)
+setup(api_key=Sys.getenv("COINMARKETCAPR_KEY"))
+```
+
+```{r}
+all_coins <- get_crypto_listings()
+
+```
+
